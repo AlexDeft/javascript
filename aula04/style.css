@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(151, 148, 148);
+}
+
+main{
+    width: 90vw;
+    height: 100vh;
+    background-color: white;
+    margin:auto;
+}
+
+legend{
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+fieldset{
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+form div{
+    padding-top: 10px;
+    padding-left: 10px;
+}

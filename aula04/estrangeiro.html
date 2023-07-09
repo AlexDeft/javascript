@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1>Quer saber se você é brasileiro ou estrangeiro?</h1>
+    <form>
+        <fieldset>
+            <legend>Escolha o país que voce nasceu:</legend>
+            <div>
+                <input type="radio" name="paises" id="brasil">
+                <label for="brasil">Brasil</label>
+            </div>
+            <div>
+                <input type="radio" name="paises" id="eua">
+                <label for="eua">Estados Unidos</label>
+            </div>
+            <div>
+                <input type="radio" name="paises" id="frança">
+                <label for="frança">França</label>
+            </div>
+            <div>
+                <input type="radio" name="paises" id="outros">
+                <label for="outros">Outros</label>
+            </div>
+            <input type="button" value="Verificar Nacionalidade" onclick="verificar()" >
+        </fieldset>
+        
+        <div id="res">
+            <h1></h1>
+        </div>
+    </form>
+    </main>
+
+    <script>
+        function verificar() {
+    var br = document.querySelector('input#brasil');
+    var res = document.querySelector('#res')
+    if (br.checked) {
+        res.innerHTML = 'Você é brasileiro'
+    } else {
+        res.innerHTML = 'Você é estrangeiro'
+    }
+}
+    </script>
+</body>
+</html>
